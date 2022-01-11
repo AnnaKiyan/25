@@ -1,0 +1,110 @@
+**, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #F0653E;
+  background: rgb(2,0,36);
+  background: linear-gradient(173deg, rgba(2,0,36,1) 0%, rgba(83,65,131,0.9906337535014006) 0%, rgba(64,67,133,1) 100%, rgba(70, 38, 187, 0.658) 100%, rgba(143,0,255,0.9402135854341737) 100%, rgba(63,70,135,1) 100%);
+  font-family: Helvetica;
+  margin: 0 auto;
+  }
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.bd {
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+form {
+  text-align: center;
+}
+.animation {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 45%; 
+  left: 47%;
+}
+span {
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+  -webkit-animation: run 2s infinite ease-in-out;
+  animation: run 2s infinite ease-in-out;
+}
+
+.one {
+  background: #F3B222;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.two {
+  background: #F0653E;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.three {
+  background: #B9C0C0;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.four {
+  background: #8F7473;
+}
+
+@-webkit-keyframes run {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+  25% {
+    transform: translate(150%) scale(0.5); 
+    border-radius: 0%;
+  }
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%; 
+  }
+  75% {
+    transform: translate(0%, 150%) scale(0.5); 
+    border-radius: 0%;
+  }
+}
+@keyframes run {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+  25% {
+    transform: translate(150%) scale(0.5); 
+    border-radius: 0%;
+  }
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%; 
+  }
+  75% {
+    transform: translate(0%, 150%) scale(0.5); 
+    border-radius: 0%;
+  }
+}
